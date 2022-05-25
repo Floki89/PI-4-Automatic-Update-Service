@@ -1,1 +1,9 @@
-
+[Unit]
+Description=update.service
+After=multi-user.target
+Type=idle
+Requires=network.target
+[Service]
+ExecStart=/home/pi/update.sh
+[Install]
+WantedBy=multi-user.target
