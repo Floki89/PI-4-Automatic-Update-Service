@@ -1,9 +1,12 @@
 [Unit]
-Description=update.service
-After=multi-user.target
-Type=idle
-Requires=network.target
+Description=Update
+
 [Service]
-ExecStart=/home/pi/update.sh
+Type=simple
+ExecStart=//home/wallpen/update.sh
+
+Requires=Network.target
+After=Network.target
+
 [Install]
 WantedBy=multi-user.target
