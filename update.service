@@ -3,7 +3,7 @@ Description=Update
 
 [Service]
 Type=simple
-ExecStart=//home/wallpen/update.sh
+ExecStart=//home/pi/update.sh
 
 Requires=Network.target
 After=Network.target
