@@ -1,3 +1,3 @@
 mkdir Updateservice
-ct update.service rootfs/lib/systemd/system/update.service
-ct update.sh /updateservice/update.sh
+mv update.service rootfs/lib/systemd/system/update.service
+mv update.sh /updateservice/update.sh
